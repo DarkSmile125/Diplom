@@ -1,7 +1,31 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<!DOCTYPE html>
 
-<p>Use this area to provide additional information.</p>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Профили</title>
+</head>
+<body>
+    <div>
+        <h3>Список профилей</h3>
+        <table>
+            <tr>
+                <td><p>Имя</p></td>
+                <td><p>Инфо</p>>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Profiles)
+            {
+                <tr>
+                    <td><p>@b.Name</p></td>
+                    <td><p>@b.ProfileInfo</p></td>
+                    <td><p><a href="/Home/Buy/@b.Id">Купить</a></p></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
