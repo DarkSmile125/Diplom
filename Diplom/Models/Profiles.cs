@@ -7,8 +7,10 @@ namespace Diplom.Models
 {
     public class Profiles
     {
-        public int ProfileID { get; set; }
+        public int ProfileId { get; set; }
 
-        public string ProfileName { get; set; }
+        public string ProfileName { get; set;}
+
+        public string ProfileInfo { get; set; }
     }
 }

@@ -17,12 +17,11 @@
                 <td><p>Инфо</p>>
                 <td></td>
             </tr>
-            @foreach (var b in ViewBag.Profiles)
+            @foreach (var b in )
             {
                 <tr>
                     <td><p>@b.Name</p></td>
                     <td><p>@b.ProfileInfo</p></td>
-                    <td><p><a href="/Home/Buy/@b.Id">Купить</a></p></td>
                 </tr>
             }
         </table>

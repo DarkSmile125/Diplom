@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Diplom.Models
 {
-    public class ProfileContext : DbContext
+    public class ProfilesContext : DbContext
     {
         public DbSet<Profiles> Profiles { get; set; }
     }
