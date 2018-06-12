@@ -11,7 +11,7 @@ namespace Diplom.Controllers
 {
     public class HomeController : Controller
     {
-        ProfileContext db = new ProfileContext();
+        ProfilesContext db = new ProfilesContext();
 
         public ActionResult Index()
         {
@@ -23,7 +23,6 @@ namespace Diplom.Controllers
         public ActionResult Profiles()
         {
             
-
             return View(db.Profiles.ToList());
         }
         
