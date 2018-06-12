@@ -1,0 +1,35 @@
+﻿
+@model IEnumerable<Diplom.Models.Profiles>
+
+@{
+    ViewBag.Title = "Profiles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Profiles</h2>
+
+
+<table>
+    <tr>
+        <td>
+            первый столб
+        </td>
+        
+        <td>
+            второй столб
+        </td>
+    </tr>
+    @foreach (Diplom.Models.Profiles  db in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(m => db.ProfileID)
+            </td>
+            <td>
+                @Html.DisplayFor(m => db.ProfileName)
+            </td>
+        </tr>
+        
+    }
+</table>
